@@ -11,7 +11,6 @@ Jlis=[]
 F2=[]
 F=[]
 
-batandconcatfiles   ="/bat/"
 inputmp4            ="/input_mp4/"
 outputmp4           ="/output_mp4/"
 direPASH            =os.getcwd().replace('\\','/')
@@ -68,13 +67,14 @@ for i2 in range(mi,mx):#ファイルの数分ループ処理
         print('Encode_Start')
         print(F)
         subprocess.call(direPASH+tempPASH+'ffmpeg'+str(i2)+'.bat',shell=True)#batファイル起動
-        Ftmp=glob.glob("."+tempPASH+'/GX????'+str(i2)+'.MP4')#ファイル番号に関連のあるチャプター取得
+        Ftmp=glob.glob("."+tempPASH+'/GX????'+str(i2)+'.MP4')#使用したファイル取得
         for i4 in range(len(F)):
             F_temp4=Ftmp[i4]
             F_temp4=str(F_temp4)
             F_temp4=F_temp4.replace('./'+tempPASH+'\\' ,"")#MP4のファイル名抽出
-
-            shutil.move("."+tempPASH+F[i4],"."+inputmp4+"/" )
+            shutil.move("."+tempPASH+F[i4],"."+inputmp4+"/" )#戻す
+        os.remove("./"+tempPASH+'ffmpeg'+str(i2)+'.bat')
+        os.remove("./"+tempPASH+'concat'+str(i2)+'.txt')
     else:
         pass
 print('Finished')
