@@ -1,4 +1,4 @@
-# Gopro-Connect-Chapter
+#Gopro Connect Chapter
 JP
 
 環境
