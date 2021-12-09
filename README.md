@@ -1,5 +1,4 @@
-# gppy
-
+# Gopro-Connect-Chapter
 JP
 
 環境
