@@ -1,6 +1,7 @@
 #Gopro Connect Chapter
-JP
 
+
+JP
 環境
 OS　Windows_10
 ffmpeg-4.4.1-full_build
