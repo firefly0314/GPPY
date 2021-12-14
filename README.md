@@ -14,7 +14,7 @@ HERO10 Black
 .pyを動かしたい方は「Python_3.9」もインストールしてください。こちらもPASHを通してください。
 
 初回起動
-gopyを起動させ、フォルダを生成します。
+Gopro Connect Chapter を起動させ、フォルダを生成します。
 
 チャプターをつなぐ
 goproのSDカードからMP4ファイルを全て「input_mp4」にコピーします。
@@ -34,7 +34,7 @@ Please install "ffmpeg-4.4.1-full_build" and go through PASH. If you google it, 
 If you want to run .py, please also install "Python_3.9". Please also go through PASH.
 
 First launch
-Start gopy and auto create a folder.
+Start Gopro Connect Chapter and auto create a folder.
 
 Connect chapters
 Copy all MP4 files from gopro's SD card to "input_mp4".
