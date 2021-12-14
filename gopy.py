@@ -3,6 +3,7 @@ import os
 import subprocess
 import shutil
 #import tqdm
+import yaml
 
 #初期
 files1=[]
@@ -11,15 +12,26 @@ Mlis=[]
 Jlis=[]
 F2=[]
 F=[]
+
+with open('config.yaml', 'r') as yml:
+    config = yaml.safe_load(yml)
+
 #デフォルトの値です
 inputmp4            ="/input_mp4/"
+Finished_using      ="/Finished_using/"
 outputmp4           ="/output_mp4/"
 tempPASH            ="/temp/"
 direPASH            =os.getcwd().replace('\\','/')
+#デフォルトをオーバーライド
+inputmp4            =str(config.get('inputmp4'))
+Finished_using      =str(config.get('Finished_using'))
+outputmp4           =str(config.get('outputmp4'))
+tempPASH            =str(config.get('tempPASH'))
 #ディレクトリが存在しない場合作成します
-filesTemp   =os.path.isdir("."+tempPASH)
-filesinpt   =os.path.isdir("."+inputmp4)
-filesoutput =os.path.isdir("."+outputmp4)
+filesTemp           =os.path.isdir("."+tempPASH)
+filesinpt           =os.path.isdir("."+inputmp4)
+filesoutput         =os.path.isdir("."+outputmp4)
+filesFinished_using =os.path.isdir("."+Finished_using)
 
 if filesTemp == True:
     pass
@@ -35,6 +47,11 @@ if filesoutput == True:
     pass
 else:
     os.makedirs("."+outputmp4)
+
+if filesFinished_using == True:
+    pass
+else:
+    os.makedirs("."+Finished_using)
 
 
 #ファイル検索開始
@@ -85,19 +102,19 @@ if len(Mlis)>0:
 
         #batファイル生成
         bat=open("."+tempPASH+'ffmpeg'+str(i2)+'.bat','a')
-        bat.write('CD '+direPASH+tempPASH+'\n''ffmpeg -f concat -i concat'+str(i2)+'.txt -c copy '+direPASH+outputmp4+'output'+str(i2)+'.mp4 -y  \n')
+        bat.write('CD '+direPASH+tempPASH+'\n''ffmpeg -f concat -i concat'+str(i2)+'.txt -c copy -analyzeduration 256M -probesize 256M '+direPASH+outputmp4+'output'+str(i2)+'.mp4 -loglevel 24 -stats -y  \n')
         bat.close()
 
         if len(F)>0: 
             print('Encode_Start')
             print(F)
-            subprocess.call(direPASH+tempPASH+'ffmpeg'+str(i2)+'.bat',shell=True)#batファイル起動
+            subprocess.run(direPASH+tempPASH+'ffmpeg'+str(i2)+'.bat',shell=True)#batファイル起動
             Ftmp=glob.glob("."+tempPASH+'/GX????'+str(i2)+'.MP4')#使用したファイル取得
             for i4 in range(len(F)):
                 F_temp4=Ftmp[i4]
                 F_temp4=str(F_temp4)
                 F_temp4=F_temp4.replace('./'+tempPASH+'\\' ,"")#MP4のファイル名抽出
-                shutil.move("."+tempPASH+F[i4],"."+inputmp4+"/" )#戻す
+                shutil.move("."+tempPASH+F[i4],"."+Finished_using+"/" )#戻す
             os.remove("./"+tempPASH+'ffmpeg'+str(i2)+'.bat')
             os.remove("./"+tempPASH+'concat'+str(i2)+'.txt')
         else:
