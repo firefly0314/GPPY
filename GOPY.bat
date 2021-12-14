@@ -1,0 +1,2 @@
+python gopy.py
+pause
