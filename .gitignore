@@ -1,8 +1,11 @@
-.mp4
-.bat
-.txt
+*.mp4
+*.bat
+*.txt
+*.spec
 input_mp4/
 Finished_using/
 output_mp4/
 temp/
+build/
 .vs/
+__pycache__/
