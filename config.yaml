@@ -2,7 +2,5 @@ inputmp4: /input_mp4/
 Finished_using: /Finished_using/
 outputmp4: /output_mp4/
 tempPASH: /temp/
-CMD: ffmpeg -f concat -i concat #+str(i2)+
-CMD2: .txt -c copy -analyzeduration 256M -probesize 256M #+direPASH+outputmp4+
-CMD3: output  #+str(i2)+
-CMD4: .mp4 -loglevel 24 -stats -y #end
+loglevel: 24
+stats: -y

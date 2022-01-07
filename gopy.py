@@ -22,11 +22,15 @@ Finished_using      ="/Finished_using/"
 outputmp4           ="/output_mp4/"
 tempPASH            ="/temp/"
 direPASH            =os.getcwd().replace('\\','/')
+loglevel            =24
+stats               ='-y'
 #デフォルトをオーバーライド
 inputmp4            =str(config.get('inputmp4'))
 Finished_using      =str(config.get('Finished_using'))
 outputmp4           =str(config.get('outputmp4'))
 tempPASH            =str(config.get('tempPASH'))
+loglevel            =str(config.get('loglevel'))
+stats               =str(config.get('stats'))
 #ディレクトリが存在しない場合作成します
 filesTemp           =os.path.isdir("."+tempPASH)
 filesinpt           =os.path.isdir("."+inputmp4)
@@ -102,7 +106,7 @@ if len(Mlis)>0:
 
         #batファイル生成
         bat=open("."+tempPASH+'ffmpeg'+str(i2)+'.bat','a')
-        bat.write('CD '+direPASH+tempPASH+'\n''ffmpeg -f concat -i concat'+str(i2)+'.txt -c copy -analyzeduration 256M -probesize 256M '+direPASH+outputmp4+'output'+str(i2)+'.mp4 -loglevel 24 -stats -y  \n')
+        bat.write('CD '+direPASH+tempPASH+'\n''ffmpeg -f concat -i concat'+str(i2)+'.txt -c copy -analyzeduration 256M -probesize 256M '+direPASH+outputmp4+'output'+str(i2)+'.mp4 -loglevel '+loglevel+' -stats '+stats+'\n')
         bat.close()
 
         if len(F)>0: 
