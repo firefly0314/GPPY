@@ -65,6 +65,7 @@ for i in range(len(files1)):
     Flen=files1[i]
     Mlis.append(int(Flen[-8:-4]))   #ファイルネーム格納
     Jlis.append(int(Flen[-10:-8]))  #チャプター番号格納
+
 #データ整理、ソート&重複削除
 Mlis.sort()
 Mlistemp=set(Mlis)
