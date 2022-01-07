@@ -4,6 +4,8 @@ import subprocess
 import shutil
 #import tqdm
 import yaml
+#my Librarys↓
+from GPCC import DirectryCreate
 
 #初期
 files1=[]
@@ -32,30 +34,13 @@ tempPASH            =str(config.get('tempPASH'))
 loglevel            =str(config.get('loglevel'))
 stats               =str(config.get('stats'))
 #ディレクトリが存在しない場合作成します
-filesTemp           =os.path.isdir("."+tempPASH)
-filesinpt           =os.path.isdir("."+inputmp4)
-filesoutput         =os.path.isdir("."+outputmp4)
-filesFinished_using =os.path.isdir("."+Finished_using)
+DirectryCreate.dc(tempPASH)    
 
-if filesTemp == True:
-    pass
-else:
-    os.makedirs("."+tempPASH)
+DirectryCreate.dc(inputmp4)
 
-if filesinpt == True:
-    pass
-else:
-    os.makedirs("."+inputmp4)
+DirectryCreate.dc(outputmp4)
 
-if filesoutput == True:
-    pass
-else:
-    os.makedirs("."+outputmp4)
-
-if filesFinished_using == True:
-    pass
-else:
-    os.makedirs("."+Finished_using)
+DirectryCreate.dc(Finished_using)
 
 
 #ファイル検索開始
