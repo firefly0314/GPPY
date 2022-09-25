@@ -1,41 +1,108 @@
-<mxfile host="app.diagrams.net" modified="2022-09-24T16:12:17.898Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="K0yVZoJll_6YQXESI4rV" version="20.3.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-25T19:38:00.371Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="PcweG0MBMD2qKmr3-hWW" version="20.3.6" type="github">
   <diagram id="8r3MDyM1kwAwDi2U2UVU" name="ページ1">
-    <mxGraphModel dx="371" dy="541" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="813" dy="449" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="zPuEqAGHxckhulcQ-oqS-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="SfvRl2KFgdxx55vroDqR-1" target="zPuEqAGHxckhulcQ-oqS-1">
+        <mxCell id="zPuEqAGHxckhulcQ-oqS-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="SfvRl2KFgdxx55vroDqR-1" target="zPuEqAGHxckhulcQ-oqS-1" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="SfvRl2KFgdxx55vroDqR-1" value="&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;初期値セット&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;br&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;ファイルフォーマット、ファイル名列、チャプター番号行の配列の準備&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="180" y="10" width="450" height="60" as="geometry" />
+          <mxGeometry x="182.51" y="10" width="450" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="zPuEqAGHxckhulcQ-oqS-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="zPuEqAGHxckhulcQ-oqS-1" target="zPuEqAGHxckhulcQ-oqS-3">
+        <mxCell id="zPuEqAGHxckhulcQ-oqS-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="zPuEqAGHxckhulcQ-oqS-1" target="zPuEqAGHxckhulcQ-oqS-3" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="zPuEqAGHxckhulcQ-oqS-1" value="&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;ディレクトリの有無の確認&lt;br&gt;import_mp4,temp,output_mp4&lt;br&gt;&lt;/font&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="316.5" y="90" width="177" height="30" as="geometry" />
+        <mxCell id="zPuEqAGHxckhulcQ-oqS-1" value="&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;ディレクトリの有無の確認&lt;br&gt;import_mp4,temp,output_mp4&lt;br&gt;&lt;/font&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="318.98" y="90" width="177" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="zPuEqAGHxckhulcQ-oqS-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="zPuEqAGHxckhulcQ-oqS-3" target="zPuEqAGHxckhulcQ-oqS-5">
+        <mxCell id="kFoIqhW_3JWQ6W0zrUI6-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="zPuEqAGHxckhulcQ-oqS-3" target="zPuEqAGHxckhulcQ-oqS-5">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="zPuEqAGHxckhulcQ-oqS-3" value="mp4を検索&lt;br&gt;G???????.MP4&lt;br&gt;とりあえずリストにぶち込む" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="320.31" y="140" width="169.37" height="50" as="geometry" />
+        <mxCell id="zPuEqAGHxckhulcQ-oqS-3" value="mp4を検索&lt;br&gt;G???????.MP4&lt;br&gt;とりあえずリストにぶち込む" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="322.82" y="140" width="169.37" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="zPuEqAGHxckhulcQ-oqS-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="zPuEqAGHxckhulcQ-oqS-5" target="zPuEqAGHxckhulcQ-oqS-10">
+        <mxCell id="kFoIqhW_3JWQ6W0zrUI6-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="zPuEqAGHxckhulcQ-oqS-5" target="zPuEqAGHxckhulcQ-oqS-10">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="zPuEqAGHxckhulcQ-oqS-5" value="文字列処理&lt;br&gt;. ,&amp;nbsp;/input_mp4\\ , MP4 を削除&lt;br&gt;G???????　だけを抽出" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="304.99" y="210" width="200" height="60" as="geometry" />
+        <mxCell id="zPuEqAGHxckhulcQ-oqS-5" value="文字列処理&lt;br&gt;. ,&amp;nbsp;/input_mp4\\ , MP4 を削除&lt;br&gt;G???????　だけを抽出" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="307.48" y="210" width="200" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="zPuEqAGHxckhulcQ-oqS-10" value="ファイル名取得" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="304.99" y="290" width="204.99" height="20" as="geometry" />
+        <mxCell id="kFoIqhW_3JWQ6W0zrUI6-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="zPuEqAGHxckhulcQ-oqS-10" target="kFoIqhW_3JWQ6W0zrUI6-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="407" y="340" />
+            </Array>
+          </mxGeometry>
         </mxCell>
-        <mxCell id="zPuEqAGHxckhulcQ-oqS-13" value="ファイル名で検索" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="350" y="430" width="120" height="60" as="geometry" />
+        <mxCell id="zPuEqAGHxckhulcQ-oqS-10" value="ファイルネーム取得,リスト型で格納&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="304.99" y="290" width="204.99" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="zPuEqAGHxckhulcQ-oqS-14" value="ファイルリストのLen&lt;br&gt;が０になったか" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="310" y="330" width="200" height="70" as="geometry" />
+        <mxCell id="kFoIqhW_3JWQ6W0zrUI6-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="zPuEqAGHxckhulcQ-oqS-13" target="kFoIqhW_3JWQ6W0zrUI6-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zPuEqAGHxckhulcQ-oqS-13" value="ファイル名に関連するファイルを検索してリストで格納" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="255" y="515" width="304.98" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="kFoIqhW_3JWQ6W0zrUI6-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="zPuEqAGHxckhulcQ-oqS-14" target="kFoIqhW_3JWQ6W0zrUI6-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="530" y="460" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="570" y="695" />
+              <mxPoint x="570" y="488" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kFoIqhW_3JWQ6W0zrUI6-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="zPuEqAGHxckhulcQ-oqS-14" target="kFoIqhW_3JWQ6W0zrUI6-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zPuEqAGHxckhulcQ-oqS-14" value="ファイルネームのLen&lt;br&gt;が０になったか" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="307.48" y="660" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="kFoIqhW_3JWQ6W0zrUI6-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="kFoIqhW_3JWQ6W0zrUI6-1" target="kFoIqhW_3JWQ6W0zrUI6-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kFoIqhW_3JWQ6W0zrUI6-1" value="ファイルネーム数取得c=(len)-1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="297.49" y="420" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kFoIqhW_3JWQ6W0zrUI6-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="kFoIqhW_3JWQ6W0zrUI6-2" target="kFoIqhW_3JWQ6W0zrUI6-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kFoIqhW_3JWQ6W0zrUI6-2" value="set型に変換して重複削除" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="323.75" y="340" width="167.49" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="kFoIqhW_3JWQ6W0zrUI6-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="kFoIqhW_3JWQ6W0zrUI6-3" target="kFoIqhW_3JWQ6W0zrUI6-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kFoIqhW_3JWQ6W0zrUI6-3" value="リスト型に変換してソート" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="329.99" y="380" width="154.99" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="kFoIqhW_3JWQ6W0zrUI6-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="kFoIqhW_3JWQ6W0zrUI6-9" target="kFoIqhW_3JWQ6W0zrUI6-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kFoIqhW_3JWQ6W0zrUI6-9" value="ファイルナンバーをキーにして辞書に格納" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="285" y="565" width="244.99" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="kFoIqhW_3JWQ6W0zrUI6-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="kFoIqhW_3JWQ6W0zrUI6-10" target="zPuEqAGHxckhulcQ-oqS-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kFoIqhW_3JWQ6W0zrUI6-10" value="nam-1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="347.49" y="610" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kFoIqhW_3JWQ6W0zrUI6-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="kFoIqhW_3JWQ6W0zrUI6-11" target="zPuEqAGHxckhulcQ-oqS-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kFoIqhW_3JWQ6W0zrUI6-11" value="ファイルリストから値を選択して格納" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="297.49" y="480" width="220" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="kFoIqhW_3JWQ6W0zrUI6-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="kFoIqhW_3JWQ6W0zrUI6-12" target="kFoIqhW_3JWQ6W0zrUI6-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kFoIqhW_3JWQ6W0zrUI6-12" value="ファイルネームの最小値と最大値を取得" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="296.25" y="760" width="222.5" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="kFoIqhW_3JWQ6W0zrUI6-21" value="" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="269.39" y="810" width="276.22" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
